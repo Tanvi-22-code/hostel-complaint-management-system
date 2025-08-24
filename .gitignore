@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database files (don’t upload real data)
+*.db
+*.sqlite3
+complaints.xlsx   # hides your live Excel data
+
+# Secrets
+.env
+.env.*
+
+# IDE / Editor
+.vscode/
+.idea/

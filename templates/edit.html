@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Complaint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-5">
+    <div class="max-w-md mx-auto bg-white p-5 rounded shadow">
+        <h1 class="text-2xl font-bold mb-5">Edit Complaint</h1>
+        <form method="POST">
+            <div class="mb-3">
+                <label class="block mb-1">Username</label>
+                <input type="text" name="username" value="{{ complaint['username'] }}" class="w-full border p-2 rounded" required>
+            </div>
+            <div class="mb-3">
+                <label class="block mb-1">Room Number</label>
+                <input type="text" name="room_number" value="{{ complaint['room_number'] }}" class="w-full border p-2 rounded" required>
+            </div>
+            <div class="mb-3">
+                <label class="block mb-1">Category</label>
+                <input type="text" name="category" value="{{ complaint['category'] }}" class="w-full border p-2 rounded" required>
+            </div>
+            <div class="mb-3">
+                <label class="block mb-1">Description</label>
+                <textarea name="description" class="w-full border p-2 rounded" required>{{ complaint['description'] }}</textarea>
+            </div>
+            <div class="mb-3">
+                <label class="block mb-1">Date</label>
+                <input type="date" name="date" value="{{ complaint['date'] }}" class="w-full border p-2 rounded" required>
+            </div>
+            <div class="mb-3">
+                <label class="block mb-1">Priority</label>
+                <select name="priority" class="w-full border p-2 rounded" required>
+                    <option {% if complaint['priority'] == 'Low' %}selected{% endif %}>Low</option>
+                    <option {% if complaint['priority'] == 'Medium' %}selected{% endif %}>Medium</option>
+                    <option {% if complaint['priority'] == 'High' %}selected{% endif %}>High</option>
+                </select>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Update</button>
+        </form>
+    </div>
+</body>
+</html>
