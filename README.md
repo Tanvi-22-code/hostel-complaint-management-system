@@ -27,14 +27,32 @@ It also supports **automatic syncing of complaints from MySQL into Excel** for o
 
 ## 📂 Project Structure  
 hostel-complaint-management-system/
+
+
 │── app.py # Main Flask application
+
+
 │── requirements.txt # Python dependencies
+
+
 │── .gitignore # Ignore rules
+
+
 │── README.md # Project documentation
+
+
 │── database.sql # MySQL schema
+
+
 │── complaints.xlsx # Excel file (auto-generated)
+
+
 │── templates/
+
+
 │ ├── index.html # Add & View complaints
+
+
 │ ├── edit.html # Edit complaint page
 
 
@@ -49,6 +67,6 @@ hostel-complaint-management-system/
 ---
 
 ## 👨‍💻 Author  
-**Your Name**  
-📧 tanvimahajan2005@gmail.com.com  
+**Tanvi Mahajan**  
+📧 tanvimahajan2005@gmail.com 
 🔗 [GitHub](https://github.com/Tanvi-22-code) | [LinkedIn](https://linkedin.com/in/tanvi-s-mahajan)
